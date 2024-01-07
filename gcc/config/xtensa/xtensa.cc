@@ -4912,7 +4912,8 @@ xtensa_starting_frame_offset (void)
 static unsigned HOST_WIDE_INT
 xtensa_asan_shadow_offset (void)
 {
-  return HOST_WIDE_INT_UC (0x10000000);
+  //return HOST_WIDE_INT_UC (0x10000000); Alejandro SHiFT
+  return HOST_WIDE_INT_UC (0x37FF8400);
 }
 
 static rtx
